@@ -1,0 +1,181 @@
+/* -------------------- */
+/* RESET */
+/* -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+  line-height: 1.5;
+}
+.name {
+    color:#6A24FF;
+}
+/* -------------------- */
+/* GLOBAL UTILITIES */
+/* -------------------- */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1D2254;
+}
+
+.list {
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* -------------------- */
+/* MAIN LAYOUT */
+/* -------------------- */
+.persona {
+  max-width: 1100px;
+  width: 100%;
+  background: #1e1b4b;
+  padding: 24px;
+  border-radius: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+/* -------------------- */
+/* LEFT COLUMN */
+/* -------------------- */
+.persona-profile {
+  width: 260px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.info-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.info-list li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.info-list span {
+  color: #6b7280;
+}
+
+.info-list strong {
+  font-weight: 600;
+}
+
+/* -------------------- */
+/* RIGHT COLUMN */
+/* -------------------- */
+.persona-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* -------------------- */
+/* QUOTE */
+/* -------------------- */
+.quote {
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* -------------------- */
+/* BOTTOM GRID */
+/* -------------------- */
+.bottom-grid {
+  display: flex;
+  gap: 16px;
+}
+
+.bottom-grid .card {
+  flex: 1;
+}
+
+/* -------------------- */
+/* TAGS */
+/* -------------------- */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: #eef2ff;
+  color: #000000;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* -------------------- */
+/* ICON ROWS */
+/* -------------------- */
+.icons {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+
+/* -------------------- */
+/* RESPONSIVE */
+/* -------------------- */
+@media (max-width: 900px) {
+  .persona {
+    flex-direction: column;
+  }
+
+  .persona-profile {
+    width: 100%;
+  }
+
+  .bottom-grid {
+    flex-direction: column;
+  }
+}
